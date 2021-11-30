@@ -38,7 +38,8 @@ class FrameTest {
         frame.setSize(200, 200);
         frame.resizingScreen();
         insets=frame.getInsets();
-
         assertEquals(200, frame.getHeight()+ insets.top- insets.bottom);
+//      resizingscreen 메소드에서 width 계산 방법이 다름
+        assertEquals(173,frame.getWidth()+ insets.left+ insets.right);
     }
 }
