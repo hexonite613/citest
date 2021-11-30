@@ -40,7 +40,5 @@ class FrameTest {
         insets=frame.getInsets();
 
         assertEquals(200, frame.getHeight()+ insets.top- insets.bottom);
-//      계산되는 방식이 다름(resizing screen 메소드 참고)
-        assertEquals(173, frame.getWidth()+ insets.left+ insets.right);
     }
 }
